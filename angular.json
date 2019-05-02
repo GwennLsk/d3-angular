@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "d3": {
+    "d3-test": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/d3",
+            "outputPath": "dist/d3-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "d3:build"
+            "browserTarget": "d3-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "d3:build:production"
+              "browserTarget": "d3-test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "d3:build"
+            "browserTarget": "d3-test:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "d3-e2e": {
+    "d3-test-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "d3:serve"
+            "devServerTarget": "d3-test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "d3:serve:production"
+              "devServerTarget": "d3-test:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "d3"
+  "defaultProject": "d3-test"
 }
