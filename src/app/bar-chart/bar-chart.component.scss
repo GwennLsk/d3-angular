@@ -7,7 +7,7 @@
   color: white;
 }
 
-::ng-deep .chart-svg {
+::ng-deep .svg {
   rect {
     fill: steelblue;
   }
@@ -15,5 +15,26 @@
     fill: white;
     font: 10px sans-serif;
     text-anchor: end;
+  }
+}
+
+::ng-deep .chart-o {
+  .bar {
+    fill: steelblue;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+    display: none;
   }
 }
